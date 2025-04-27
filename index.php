@@ -50,12 +50,12 @@
 
     <div class="bg-pink-100">
         <!-- Navbar -->
-            <nav class="backdrop-blur-sm bg-opacity-10 text-white p-4 sticky top-0 z-50 shadow-md">
+            <nav class="bg-pink-100 text-white p-4 sticky top-0 z-50 shadow-md">
                 <div class="container mx-auto flex justify-between items-center">
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div class="hidden sm:ml-6 sm:block">
                             <div class=" flex space-x-4">
-                            <img src="/ThriftStore/src/image/R.png" alt="Logo" class="w-10 h-9">
+                            <img src="/ThriftStore/src/image/R.png" alt="Logo" class="w-10 h-9 mr-12">
                             <a href="#" class="nav-link active hover:scale-110 hover:text-white hover:bg-gray-700 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black">HOME</a>
                             <a href="#t-shirt" class="nav-link hover:scale-110 transition duration-500 rounded-md px-3 py-2 text-sm  font-bold text-black hover:bg-gray-700 hover:text-white">T-SHIRT</a>
                             <a href="#shorts" class="nav-link hover:scale-110 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black hover:bg-gray-700 hover:text-white">SHORTS</a>
@@ -131,8 +131,8 @@
             <div class="mx-auto max-w-5xl px-6 sm:px-8 lg:px-10 border-2 border-gray-200 backdrop-filter backdrop-blur-sm bg-opacity-20 rounded-3xl">
                 <div class="m-6 p-6 text-center">
                         <h1 class="welcome text-5xl font-bold tracking-tight text-white mb-4 ">Welcome to our Thrift Store</h1>
-                        <p class="mt-4 text-xl font-bold text-white italic">We are a thrift store that sells quality second-hand clothes at affordable prices.</p>
-                        <p class="mt-4 text-xl font-bold text-white italic">Where Your Grandma’s Closet Meets Your New Style – Thrift Like a Pro!</p>
+                        <p class="mt-4 text-2xl font-bold text-white italic">We are a thrift store that sells quality second-hand clothes at affordable prices.</p>
+                        <p class="mt-4 text-2xl font-bold text-white italic">Where Your Grandma’s Closet Meets Your New Style – Thrift Like a Pro!</p>
                         <p class="stay mt-8 text-5xl font-semibold text-white">Stay Thrifty!</p>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
             
 
             <div class="bg-pink-50">
-                <h1 class="ml-24 pt-5 text-4xl pl-2 font-bold tracking-tight text-gray-900"><section id="t-shirt">Latest Thrift</section></h1>
+                <h1 class="ml-24 pt-5 text-4xl pl-2 font-bold tracking-tight text-gray-900"><section id="t-shirt">New Arrival</section></h1>
             
                 <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                 
@@ -368,12 +368,12 @@
                 -->
                     
 
-                    <h1 class=" pt-5 pb-24 text-4xl font-bold tracking-tight text-gray-900"><section id="shorts">Latest Thrift</section></h1>
+                    <h1 class=" pt-5 pb-24 text-4xl font-bold tracking-tight text-gray-900"><section id="shorts">New Arrival</section></h1>
                     <h2 class="text-2xl font-bold tracking-tight text-gray-900">Shorts</h2>
 
                     <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                             <div class="product hover:scale-100 transition duration-250 hover:shadow-2xl border-2 bg-white border-gray-300 rounded-2xl shadow-sm mt-4 mx-4 mb-4 p-4">
-                                <img src="/ThriftStore/src/image/jorts1.jpg" alt="RRJ" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
+                                <img src="/ThriftStore/src/image/SHORT1.jpg" alt="RRJ" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
                                         <h3 class="text-sm font-bold text-gray-700 product-title">RRJ</h3>
@@ -402,7 +402,7 @@
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
                                         <h3 class="text-sm font-bold text-gray-700 product-title">Jag Jeans</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Denim Black</p>
+                                        <p class="mt-1 text-sm text-black product-color">White</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">30-32</p>
@@ -453,7 +453,7 @@
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
                                         <h3 class="text-sm font-bold text-gray-700 product-title">Oxygen</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Aphricot</p>
+                                        <p class="mt-1 text-sm text-black product-color">Light Blue/Denim</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">30-32</p>
@@ -478,7 +478,7 @@
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
                                         <h3 class="text-sm font-bold text-gray-700 product-title">Lee</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Black</p>
+                                        <p class="mt-1 text-sm text-black product-color">Dark Blue Denim</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">30</p>
@@ -503,7 +503,7 @@
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
                                         <h3 class="text-sm font-bold text-gray-700 product-title">Levi's</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Light Wash</p>
+                                        <p class="mt-1 text-sm text-black product-color">Dark Gray Denim</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">28</p>
@@ -524,11 +524,11 @@
                             </div>
                             
                             <div class="product hover:scale-100 transition duration-250 hover:shadow-2xl border-2 bg-white border-gray-300 rounded-2xl shadow-sm mt-4 mx-4 mb-4 p-4">
-                               <img src="/ThriftStore/src/image/palda2.jpg" alt="Cotton On" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
+                                <img src="/ThriftStore/src/image/SHORT3.jpg" alt="Cotton On" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
                                         <h3 class="text-sm font-bold text-gray-700 product-title">Cotton On</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Light Blue</p>
+                                        <p class="mt-1 text-sm text-black product-color">Black</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">29</p>
@@ -549,11 +549,11 @@
                             </div>  
 
                             <div class="product hover:scale-100 transition duration-250 hover:shadow-2xl border-2 bg-white border-gray-300 rounded-2xl shadow-sm mt-4 mx-4 mb-4 p-4">
-                               <img src="/ThriftStore/src/image/jorts5.jpg" alt="Lemandik Tee"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
+                                <img src="/ThriftStore/src/image/SHORT2.jpg" alt="Lemandik Tee"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
                                         <h3 class="text-sm font-bold text-gray-700 product-title">H&M</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Deep Blue</p>
+                                        <p class="mt-1 text-sm text-black product-color">Medium Blue Denim</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">34</p>
@@ -579,7 +579,7 @@
                         Bags
                     -->
 
-                    <h3 class=" pt-5 pb-24 text-4xl font-bold tracking-tight text-gray-900"><section id="bags">Latest Thrift</section></h1>        
+                    <h3 class=" pt-5 pb-24 text-4xl font-bold tracking-tight text-gray-900"><section id="bags">New Arrival</section></h1>        
                         <h2 class="text-2xl font-bold tracking-tight text-gray-900">Bags</h2>
 
                     <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
@@ -587,8 +587,8 @@
                                 <img src="/ThriftStore/src/image/BROWNBAG.jpg" alt="Air Force 1" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Air Force 1</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Triple White</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Tommy Hilfiger</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Brown/Black</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">42</p>
@@ -612,8 +612,8 @@
                                 <img src="/ThriftStore/src/image/STRIPEBAG.jpg" alt="Altra"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Altra</h3>
-                                        <p class="mt-1 text-sm text-black product-color">White</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Gentle Woman </h3>
+                                        <p class="mt-1 text-sm text-black product-color">Stripe</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">43</p>
@@ -637,8 +637,8 @@
                                 <img src="/ThriftStore/src/image/KHAKIBAG.jpg" alt="Birkenstock Clogs" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Birkenstock Clogs</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Browm</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Gentle Woman </h3>
+                                        <p class="mt-1 text-sm text-black product-color">Aphricot</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">42</p>
@@ -662,12 +662,12 @@
                                 <img src="/ThriftStore/src/image/PURPLEBAG.jpg" alt="Adidas Campus"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Adidas Campus</h3>
-                                        <p class="mt-1 text-sm text-black product-color">White</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Supreme</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Purple</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">43</p>
-                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱1000</p>
+                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2000</p>
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
@@ -687,8 +687,8 @@
                                 <img src="/ThriftStore/src/image/ORANGEBAG.jpg" alt="Dr.Martens " class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Dr.Martens</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Brown</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Louis Vuitton</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Orange</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">44</p>
@@ -712,12 +712,12 @@
                                 <img src="/ThriftStore/src/image/REDBAG.jpg" alt="New Balance 530"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">New Balance 530</h3>
-                                        <p class="mt-1 text-sm text-black product-color">White</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Guess</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Red</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">40</p>
-                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱949</p>
+                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱1399</p>
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
@@ -737,8 +737,8 @@
                                 <img src="/ThriftStore/src/image/BLACKBAG.jpg" alt="Converse" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Converse</h3>
-                                        <p class="mt-1 text-sm text-black product-color">White</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Samsonite</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Black</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">44</p>
@@ -762,8 +762,8 @@
                                 <img src="/ThriftStore/src/image/GREENBAG.jpg" alt="Lemandik Tee"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Travis Scott</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Triple Black</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Gentle Woman</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Green/Pink</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">45</p>
@@ -792,7 +792,7 @@
                     -->
 
 
-                        <h3 class=" pt-5 pb-24 text-4xl font-bold tracking-tight text-gray-900"><section id="shoes">Latest Thrift</section></h1>        
+                        <h3 class=" pt-5 pb-24 text-4xl font-bold tracking-tight text-gray-900"><section id="shoes">New Arrival</section></h1>        
                         <h2 class="text-2xl font-bold tracking-tight text-gray-900">Shoes</h2>
 
                     <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
@@ -800,12 +800,12 @@
                                 <img src="/ThriftStore/src/image/RED.jpg" alt="Air Force 1" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Air Force 1</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Triple White</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Jordan Low</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Gym Red</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">42</p>
-                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱999</p>
+                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2000</p>
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
@@ -825,12 +825,12 @@
                                 <img src="/ThriftStore/src/image/YELLOW.jpg" alt="Altra"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Altra</h3>
-                                        <p class="mt-1 text-sm text-black product-color">White</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Travis Scott</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Canary</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">43</p>
-                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱849</p>
+                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2000</p>
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
@@ -850,12 +850,12 @@
                                 <img src="/ThriftStore/src/image/GREY.jpg" alt="Birkenstock Clogs" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Birkenstock Clogs</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Browm</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Nike V2K</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Metalic Silver</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">42</p>
-                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱949</p>
+                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2000</p>
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
@@ -875,12 +875,12 @@
                                 <img src="/ThriftStore/src/image/GREYWHITE.jpg" alt="Adidas Campus"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Adidas Campus</h3>
-                                        <p class="mt-1 text-sm text-black product-color">White</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Nike Blazer</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Mica Green</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">43</p>
-                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱1000</p>
+                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2000</p>
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
@@ -900,12 +900,12 @@
                                 <img src="/ThriftStore/src/image/DIRTYWHITE.jpg" alt="Dr.Martens " class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Dr.Martens</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Brown</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Onitsuka Tiger MEXICO 66</h3>
+                                        <p class="mt-1 text-sm text-black product-color">CREAM/BLACK</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">44</p>
-                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱1200</p>
+                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2000</p>
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
@@ -925,12 +925,12 @@
                                 <img src="/ThriftStore/src/image/BLACKSILVER.jpg" alt="New Balance 530"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">New Balance 530</h3>
-                                        <p class="mt-1 text-sm text-black product-color">White</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Adidas Originals</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Atmos Samba Tuxedo</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">40</p>
-                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱949</p>
+                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2000</p>
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
@@ -950,12 +950,12 @@
                                 <img src="/ThriftStore/src/image/BLACK.jpg" alt="Converse" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Converse</h3>
-                                        <p class="mt-1 text-sm text-black product-color">White</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Nike Blazer City Low Seude</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Black/White</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">44</p>
-                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱899</p>
+                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2000</p>
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
@@ -975,12 +975,12 @@
                                 <img src="/ThriftStore/src/image/BROWN.jpg" alt="Lemandik Tee"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Travis Scott</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Triple Black</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Onitsuka Tiger Tokuten</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Brown Olive</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">45</p>
-                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2550</p>
+                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2000</p>
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>

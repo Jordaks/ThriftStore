@@ -80,12 +80,12 @@
 </head>
 <body class="bg-pink-50">
 
-<nav class="backdrop-blur-sm bg-opacity-10 text-white p-4 sticky top-0 z-50 shadow-md">
+<nav class="bg-pink-100 text-white p-4 sticky top-0 z-50 shadow-2xl">
                 <div class="container mx-auto flex justify-between items-center">
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div class="hidden sm:ml-6 sm:block">
                             <div class=" flex space-x-4">
-                            <img src="/ThriftStore/src/image/R.png" alt="Logo" class="w-10 h-9">
+                            <img src="/ThriftStore/src/image/R.png" alt="Logo" class="w-10 h-9 mr-10">
                             <a href="/ThriftStore/index.php" class="nav-link active hover:scale-110 hover:text-white hover:bg-gray-700 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black">Home</a>
                             <a href="#about" class="nav-link hover:scale-110 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black hover:bg-gray-700 hover:text-white">About</a>
                             </div>

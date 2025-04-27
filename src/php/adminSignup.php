@@ -61,27 +61,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="/ThriftStore/src/image/R.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Horizon&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z5l5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Sign Up Admin</title>
+
     <style>
         html {
             scroll-behavior: smooth;
         }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            font-family: 'Poppins', sans-serif;
+        }
     </style>
-
-    <title>Sign Up Admin</title>
 </head>
-<body class="bg-orange-100">
+<body class="bg-pink-50">
     
-<nav class="backdrop-blur-md bg-opacity-10 text-white p-4 sticky top-0 z-50 shadow-md">
+            <nav class="bg-pink-100 shadow-2xl text-white p-4 sticky top-0 z-50 shadow-md">
                 <div class="container mx-auto flex justify-between items-center">
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div class="hidden sm:ml-6 sm:block">
                             <div class=" flex space-x-4">
-                            <img src="/ThriftStore/src/image/R.png" alt="Logo" class="w-10 mr-10 h-9">
-                            <a href="../../index.php" class="active hover:scale-110 hover:text-white hover:bg-gray-700 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black">Home</a>
-                            <a href="#about" class="hover:scale-110 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black hover:bg-gray-700 hover:text-white">About</a>
+                            <img src="/ThriftStore/src/image/R.png" alt="Logo" class="w-10 h-9 mr-10">
+                            <a href="/ThriftStore/index.php" class="nav-link active hover:scale-110 hover:text-white hover:bg-gray-700 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black">Home</a>
+                            <a href="#about" class="nav-link hover:scale-110 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black hover:bg-gray-700 hover:text-white">About</a>
                             </div>
                         </div>
                     </div>
@@ -93,10 +99,10 @@
                             <!-- Cart -->
                         
                                 <?php if($authenticated){ ?>
-                                    <a href="cart.php">
+                                    <a href="src/php/cart.php">
                                         <button class="pl-3">
                                             <span >
-                                                <svg  class="hover:scale-110 transition duration-500 fill-current text-black w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <svg  class="hover:scale-110 transition duration-500 fill-current text-pink-500 w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                     <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z" clip-rule="evenodd" />
                                                 </svg>
                                             </span>
@@ -105,7 +111,7 @@
                                 <?php } else { ?>
                                     <button onclick="alert('Please login first before you order')"  class="pl-3"> 
                                             <span >
-                                                <svg  class="hover:scale-110 transition duration-500 fill-current text-black w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <svg  class="hover:scale-110 transition duration-500 fill-current text-pink-500 w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                     <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z" clip-rule="evenodd" />
                                                 </svg>
                                             </span>
@@ -115,7 +121,7 @@
                                 <!-- User -->
 
                                 <?php if($authenticated){ ?>
-                                    <p id="cart-count" class="bg-orange-500 text-white text-xs rounded-full flex items-center justify-center absolute top-7 left-[86%] px-1 py-[2px]">0</p>
+                                    <p id="cart-count" class="bg-pink-200 text-gray-500 text-xs rounded-full flex items-center justify-center absolute top-7 left-[86%] px-1 py-[2px]">0</p>
                                     <button onclick="toggleUser()" class="p-3 ">
                                         <span>
                                             <svg class="hover:scale-110 transition duration-500 text-gray-800 w-11 h-11"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -128,15 +134,15 @@
 
                                 <?php } else { ?>  
                                     <div class="hover:scale-110 transition duration-500 relative ml-3 border-2 rounded-xl border-black bg-white hover:border-gray-500">
-                                    <a href="adminLogin.php" target="">
-                                            <button type="button" class="ml-1.5 mr-1.5  hover:scale-110 transition duration-500 relative rounded-full p-1 text-black hover:text-gray-500 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden font-bold"> LOG IN
+                                        <a href="adminLogin.php" target="">
+                                            <button type="button" class="ml-1.5 mr-1.5  hover:scale-110 transition duration-500 relative rounded-full p-1  text-black hover:text-gray-500 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden font-bold"> LOG IN
                                                 <span class="absolute -inset-1.5"></span>
                                             </button>
                                         </a>
                                     </div>
 
                                     <div class="hover:scale-110 transition duration-500 relative ml-3 border-2 rounded-xl border-black bg-white hover:border-gray-500 ">
-                                        <a href="adminSignup.php" target="">
+                                    <a href="adminSignup.php" target="">
                                             <button type="button" class="ml-1.5 mr-1.5 hover:scale-110 transition duration-500 relative rounded-full p-1 text-black hover:text-gray-500 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden font-bold"> SIGN UP
                                                 <span class="absolute -inset-1.5"></span>
                                             </button>
@@ -147,8 +153,8 @@
                 </div>
             </nav>
 
-    <div class="bg-[url('/ThriftStore/src/image/bg.jpg')] bg-center px-20 min-h-screen grid place-items-center">
-        <div class="bg-orange-100 p-12 rounded-3xl shadow-2xl w-1/2">
+    <div class="bg-[url('/ThriftStore/src/image/backg.jpg')] bg-center bg-cover px-6 min-h-screen grid place-items-center">
+        <div class="bg-pink-100 p-12 rounded-3xl shadow-2xl w-1/2">
         <img src="/ThriftStore/src/image/R.png" alt="Logo" class="w-8 h-8 text-center mx-auto">
             <h2 class=" pt-1 text-4xl font-bold tracking-tight text-gray-900 text-center">Create Account</h2>
             <h3 class="pt-1 text-2xl font-bold tracking-tight text-gray-900 text-center">Admin</h3>
@@ -233,13 +239,13 @@
                 </ul>
 
                 <div class="mt-5">
-                    <button type="submit" class="w-fit ml-40 font-semibold mt-4 bg-orange-500 text-white px-4 py-2 rounded-2xl hover:bg-orange-400">
+                    <button type="submit" class="w-fit ml-48 font-semibold mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300">
                         <p class="text-center text-lg px-5 font-bold">Create Account</p>
                     </button>
                 </div>
             </form>
             <div class="mt-5 text-sm font-semibold text-center">
-                Do you have an account? <a href="adminLogin.php" class="text-orange-500 hover:text-orange-700">Log In</a>
+                Do you have an account? <a href="adminLogin.php" class="text-pink-500 hover:text-pink-700">Log In</a>
             </div>
         </div>
     </div>
@@ -360,12 +366,12 @@
                     </div>
 
                     
-            <div class="mt-auto bg-[#A98B72] text-white text-center py-4">
-                &copy; 2025 RETHRY. All Rights Reserved. |
-                <a href="#" class="text-yellow-400 hover:underline mx-2">Terms of Service</a> |
-                <a href="#" class="text-yellow-400 hover:underline mx-2">FAQs</a> |
-                <a href="#" class="text-yellow-400 hover:underline mx-2">Philippines</a> |
-            </div>
+                    <div class="mt-auto bg-pink-200 text-gray-500 text-center py-4">
+                        &copy; 2025 RETHRY. All Rights Reserved. |
+                        <a href="#" class="text-gray-500 hover:underline mx-2">Terms of Service</a> |
+                        <a href="#" class="text-gray-500 hover:underline mx-2">FAQs</a> |
+                        <a href="#" class="text-gray-500 hover:underline mx-2">Philippines</a> |
+                    </div>
             
         </footer>
 
