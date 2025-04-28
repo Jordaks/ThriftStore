@@ -18,7 +18,7 @@
     <title>Thrift Shop</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="icon" type="image/png" href="/ThriftStore/src/image/R.png"/>
+    <link rel="icon" type="image/png" href="/ThriftStore/src/image/rethry.png"/>
 
     <style>
         html {
@@ -48,20 +48,20 @@
 </head>
 <body >
 
-    <div class="bg-pink-100">
+    <div class="bg-white">
         <!-- Navbar -->
-            <nav class="bg-pink-100 text-white p-4 sticky top-0 z-50 shadow-md">
+            <nav class="bg-pink-50 p-4 sticky top-0 z-50 shadow-md">
                 <div class="container mx-auto flex justify-between items-center">
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div class="hidden sm:ml-6 sm:block">
                             <div class=" flex space-x-4">
-                            <img src="/ThriftStore/src/image/R.png" alt="Logo" class="w-10 h-9 mr-12">
-                            <a href="#" class="nav-link active hover:scale-110 hover:text-white hover:bg-gray-700 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black">HOME</a>
-                            <a href="#t-shirt" class="nav-link hover:scale-110 transition duration-500 rounded-md px-3 py-2 text-sm  font-bold text-black hover:bg-gray-700 hover:text-white">T-SHIRT</a>
-                            <a href="#shorts" class="nav-link hover:scale-110 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black hover:bg-gray-700 hover:text-white">SHORTS</a>
-                            <a href="#bags" class="nav-link hover:scale-110 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black hover:bg-gray-700 hover:text-white">BAGS</a>
-                            <a href="#shoes" class="nav-link hover:scale-110 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black hover:bg-gray-700 hover:text-white">SHOES</a>
-                            <a href="#about" class="nav-link hover:scale-110 transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black hover:bg-gray-700 hover:text-white">ABOUT</a>
+                            <img src="/ThriftStore/src/image/rethry.png" alt="Logo" class="w-12 h-9 mr-12">
+                            <a href="#" class="nav-link active hover:scale-110 hover:text-black hover:bg-white transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black">HOME</a>
+                            <a href="#t-shirt" class="nav-link hover:scale-110 transition duration-500 rounded-md px-3 py-2 text-sm  font-bold text-black hover:bg-white hover:text-black">T-SHIRT</a>
+                            <a href="#shorts" class="nav-link active hover:scale-110 hover:text-black hover:bg-white transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black">SHORTS</a>
+                            <a href="#bags" class="nav-link active hover:scale-110 hover:text-black hover:bg-white transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black">BAGS</a>
+                            <a href="#shoes" class="nav-link active hover:scale-110 hover:text-black hover:bg-white transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black">SHOES</a>
+                            <a href="#about" class="nav-link active hover:scale-110 hover:text-black hover:bg-white transition duration-500 rounded-md px-3 py-2 text-sm font-bold text-black">ABOUT</a>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                                     <a href="src/php/cart.php">
                                         <button class="pl-3">
                                             <span >
-                                                <svg  class="hover:scale-110 transition duration-500 fill-current text-pink-500 w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <svg  class="hover:scale-110 transition duration-500 fill-current text-black w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                     <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z" clip-rule="evenodd" />
                                                 </svg>
                                             </span>
@@ -85,7 +85,7 @@
                                 <?php } else { ?>
                                     <button onclick="alert('Please login first before you order')"  class="pl-3"> 
                                             <span >
-                                                <svg  class="hover:scale-110 transition duration-500 fill-current text-pink-500 w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <svg   svg  class="hover:scale-110 transition duration-500 fill-current text-black w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                     <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z" clip-rule="evenodd" />
                                                 </svg>
                                             </span>
@@ -95,7 +95,7 @@
                                 <!-- User -->
 
                                 <?php if($authenticated){ ?>
-                                    <p id="cart-count" class="bg-pink-200 text-gray-500 text-xs rounded-full flex items-center justify-center absolute top-7 left-[86%] px-1 py-[2px]">0</p>
+                                    <p id="cart-count" class="bg-white text-black text-xs rounded-full flex items-center justify-center absolute top-7 left-[86%] px-1 py-[2px]">0</p>
                                     <button onclick="toggleUser()" class="p-3 ">
                                         <span>
                                             <svg class="hover:scale-110 transition duration-500 text-gray-800 w-11 h-11"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -108,7 +108,7 @@
 
                                 <?php } else { ?>  
                                     <div class="hover:scale-110 transition duration-500 relative ml-3 border-2 rounded-xl border-black bg-white hover:border-gray-500">
-                                        <a href="src/php/login.php" target="">
+                                        <a href="src/php/adminLogin.php" target="">
                                             <button type="button" class="ml-1.5 mr-1.5  hover:scale-110 transition duration-500 relative rounded-full p-1  text-black hover:text-gray-500 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden font-bold"> LOG IN
                                                 <span class="absolute -inset-1.5"></span>
                                             </button>
@@ -116,7 +116,7 @@
                                     </div>
 
                                     <div class="hover:scale-110 transition duration-500 relative ml-3 border-2 rounded-xl border-black bg-white hover:border-gray-500 ">
-                                    <a href="src/php/signup.php" target="">
+                                    <a href="src/php/adminSignup.php" target="">
                                             <button type="button" class="ml-1.5 mr-1.5 hover:scale-110 transition duration-500 relative rounded-full p-1 text-black hover:text-gray-500 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden font-bold"> SIGN UP
                                                 <span class="absolute -inset-1.5"></span>
                                             </button>
@@ -130,7 +130,7 @@
             <header class="bg-[url('/ThriftStore/src/image/backg.jpg')] bg-center bg-cover px-6 min-h-screen grid place-items-center">
             <div class="mx-auto max-w-5xl px-6 sm:px-8 lg:px-10 border-2 border-gray-200 backdrop-filter backdrop-blur-sm bg-opacity-20 rounded-3xl">
                 <div class="m-6 p-6 text-center">
-                        <h1 class="welcome text-5xl font-bold tracking-tight text-white mb-4 ">Welcome to our Thrift Store</h1>
+                        <h1 class="welcome text-5xl font-bold tracking-tight text-white mb-4 ">WELCOME TO OUR THRIFT STORE</h1>
                         <p class="mt-4 text-2xl font-bold text-white italic">We are a thrift store that sells quality second-hand clothes at affordable prices.</p>
                         <p class="mt-4 text-2xl font-bold text-white italic">Where Your Grandma’s Closet Meets Your New Style – Thrift Like a Pro!</p>
                         <p class="stay mt-8 text-5xl font-semibold text-white">Stay Thrifty!</p>
@@ -143,7 +143,7 @@
 
             
 
-            <div class="bg-pink-50">
+            <div class="bg-white">
                 <h1 class="ml-24 pt-5 text-4xl pl-2 font-bold tracking-tight text-gray-900"><section id="t-shirt">New Arrival</section></h1>
             
                 <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
@@ -162,8 +162,8 @@
                                     <img src="/ThriftStore/src/image/boss1.jpg" alt="Carhartt Tee" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Carhartt</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Black</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Boss</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Gray/Green</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">Large</p>
@@ -171,12 +171,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -187,21 +187,21 @@
                                 <img src="/ThriftStore/src/image/essentials.jpg" alt="Carhartt Tee"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Carhartt</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Black</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Essesntials</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Choco Brown</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">Small</p>
-                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱399</p>
+                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱599</p>
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -212,21 +212,21 @@
                                 <img src="/ThriftStore/src/image/rl.jpg" alt="Internal Reform Tee" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Internal Reform</h3>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Ralph Lauren</h3>
                                         <p class="mt-1 text-sm text-black product-color">Khaki</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">Large</p>
-                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱499</p>
+                                        <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱899</p>
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -238,8 +238,8 @@
                                     class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">CRT</h3>
-                                        <p class="mt-1 text-sm text-black product-color">White</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Polo</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Orange</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">Medium</p>
@@ -247,12 +247,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -263,8 +263,8 @@
                                 <img src="/ThriftStore/src/image/boss2.jpg" alt="Adidas Tee" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Adidas</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Black</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Boss</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Green</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">Medium</p>
@@ -272,12 +272,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -288,8 +288,8 @@
                                 <img src="/ThriftStore/src/image/blueberry.jpg" alt="Carhartt Tee"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Carhartt</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Black</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Blueberry</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Dirty White</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">Large</p>
@@ -297,12 +297,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -313,8 +313,8 @@
                                 <img src="/ThriftStore/src/image/nike1.jpg" alt=" Teeluv Tee" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Teeluv</h3>
-                                        <p class="mt-1 text-sm text-black product-color">Khaki</p>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Nike</h3>
+                                        <p class="mt-1 text-sm text-black product-color">Blue</p>
                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 product-size">Large</p>
@@ -322,12 +322,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -338,7 +338,7 @@
                                 <img src="/ThriftStore/src/image/underarmour.jpg" alt="Lemandik Tee"  class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Lemandik</h3>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Under Armour</h3>
                                         <p class="mt-1 text-sm text-black product-color">Gray</p>
                                     </div>
                                     <div>
@@ -347,12 +347,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -376,7 +376,7 @@
                                 <img src="/ThriftStore/src/image/SHORT1.jpg" alt="RRJ" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">RRJ</h3>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">Cotton On</h3>
                                         <p class="mt-1 text-sm text-black product-color">Blue</p>
                                     </div>
                                     <div>
@@ -385,12 +385,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -410,12 +410,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -435,12 +435,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -461,12 +461,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -486,12 +486,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -511,12 +511,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -527,7 +527,7 @@
                                 <img src="/ThriftStore/src/image/SHORT3.jpg" alt="Cotton On" class="product-image w-full aspect-square object-cover rounded-2xl bg-gray-200" />
                                 <div class="mt-4 flex justify-between mr-4">
                                     <div class="ml-4">
-                                        <h3 class="text-sm font-bold text-gray-700 product-title">Cotton On</h3>
+                                        <h3 class="text-sm font-bold text-gray-700 product-title">RRJ</h3>
                                         <p class="mt-1 text-sm text-black product-color">Black</p>
                                     </div>
                                     <div>
@@ -536,12 +536,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -561,12 +561,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -596,12 +596,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -621,12 +621,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -646,12 +646,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -671,12 +671,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -696,12 +696,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -721,12 +721,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -746,12 +746,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -771,12 +771,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -809,12 +809,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -834,12 +834,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -859,12 +859,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -884,12 +884,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -909,12 +909,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -934,12 +934,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -959,12 +959,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -984,12 +984,12 @@
                                     </div>
                                 </div>
                                 <?php if($authenticated){ ?>
-                                <button onclick="addToCart(this)" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="addToCart(this)" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
                                 <?php } else { ?>
-                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full add-to-cart relative">
+                                <button onclick="alert('Please login first before you order')" class="mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full add-to-cart relative">
                                         <i class="fa-solid fa-cart-plus text-2xl top-1 absolute left-12"></i>
                                         <span class="ml-8 flex items-center justify-center text-sm font-bold text-white">Add To Cart</span>
                                 </button>
@@ -1037,7 +1037,7 @@
 
                 
                     <a href="src/php/logout.php">
-                        <button class="bg-pink-400 text-white px-4 py-2 rounded-2xl hover:bg-pink-300 w-full mt-5 w-full font-semibold  px-4 py-2 rounded-2xl hover:bg-orange-400">
+                        <button class="bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl w-full mt-5 w-full font-semibold  px-4 py-2 rounded-2xl hover:bg-gray-600">
                             Logout
                         </button>
                     </a>
@@ -1054,7 +1054,7 @@
 
         </main>
 
-        <footer  >
+        <footer class="bg-pink-50" >
                     <div class="grid grid-cols-3 gap-4 p-6">
                         <div>
                             <h5 class="mr-20 ml-40 text-l font-bold tracking-tight text-gray-900"><section id="about">ABOUT THRIFT SHOP</section></h5>
@@ -1169,8 +1169,8 @@
                     </div>
 
                     
-            <div class="mt-auto bg-pink-200 text-gray-500 text-center py-4">
-                &copy; 2025 RETHRY. All Rights Reserved. |
+            <div class="mt-auto bg-pink-100 text-gray-500 text-center py-4">
+                &copy; <?php echo date("Y"); ?> RETHRY. All rights reserved. |
                 <a href="#" class="text-gray-500 hover:underline mx-2">Terms of Service</a> |
                 <a href="#" class="text-gray-500 hover:underline mx-2">FAQs</a> |
                 <a href="#" class="text-gray-500 hover:underline mx-2">Philippines</a> |
@@ -1228,8 +1228,8 @@
             const navLinks = document.querySelectorAll('.nav-link');
 
             function setActive(link) {
-                navLinks.forEach(el => el.classList.remove('bg-gray-700', 'text-white'));
-                link.classList.add('bg-gray-700', 'text-white', );
+                navLinks.forEach(el => el.classList.remove('bg-white', 'text-black'));
+                link.classList.add('bg-white', 'text-black', );
             }
 
             navLinks.forEach(link => {

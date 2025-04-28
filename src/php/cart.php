@@ -1,8 +1,8 @@
 <?php   
    include ("../../config/database.php"); // Corrected path to database.php
 
-   session_start();    
-   $authenticated = isset($_SESSION["email"]);
+    session_start();    
+    $authenticated = isset($_SESSION["email"]);
 
 ?>
 
@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Horizon&display=swap" rel="stylesheet">
     <title>SHOPPING CART</title>
 </head>
-<body class="bg-orange-50">
+<body class="bg-pink-50">
 
 
         <nav class="backdrop-blur-md bg-opacity-10 text-white p-4 sticky top-0 z-50 shadow-md">
@@ -28,9 +28,9 @@
                         <div class="hidden sm:ml-6 sm:block">
                             <div class=" flex space-x-4">
                             <img src="/ThriftStore/src/image/R.png" alt="Logo" class="w-10 h-9">
-                            <p class="text-[#A98B72] font-bold text-3xl font-horizon">RETHRY</p> <p class="text-[#A98B72] font-bold text-2xl">|</p> <p class="text-[#A98B72] font-bold text-3xl pr-40 font-horizon">SHOPPING CART</p>
+                            <p class="text-black  font-bold text-3xl font-horizon">RETHRY</p> <p class="text-black font-bold text-2xl">|</p> <p class="text-black  font-bold text-3xl pr-40 font-horizon">SHOPPING CART</p>
                             <span class="pl-96">
-                                <a class="text-[#A98B72] hover:underline hover:text-[#B79C81] font-semibold text-xl font-bevan" href="../../index.php">← CONTINUE SHOPPING</a>
+                                <a class="text-black hover:underline hover:text-gray-600 font-semibold text-xl font-bevan" href="../../index.php">← CONTINUE SHOPPING</a>
                             </span>
                             </div>
                         </div>
@@ -39,19 +39,19 @@
                 </div>
         </nav>
         
-                        <div class="flex justify-between p-8 items-center bg-orange-100 text-gray-700 m-5 py-10bg-orange-100 rounded-xl shadow-2xl  text-lg font-semibold">
+                        <div class="flex  bg-white justify-between p-8 items-center  text-gray-700 m-5 py-10 rounded-xl shadow-2xl  text-lg font-semibold">
                             <h3 class="font-bold ml-32 mr-10 pr-3  text-2xl">PRODUCTS</h3>
                             <h4 class="font-semibold pr-7 text-2xl">Color/Size</h4>
                             <h4 class="font-semibold pl-5 text-2xl">Price</h4>
                             <h4 class="font-semibold mr-3 text-2xl">Remove</h4>
                         </div>
 
-                        <div class="bg-orange-100 rounded-xl m-4 shadow-2xl ">
+                        <div class=" bg-white rounded-xl m-4 shadow-2xl ">
                             <ul class="" id="cartItems"></ul>
                         </div>
 
-                        <div class="bg-orange-100 rounded-xl m-4 shadow-2xl ">
-                            <div class="mx-10 text-right text-3xl border-t border-black mt-5 pt-5 font-semibold">
+                        <div class=" bg-white rounded-xl m-4 shadow-2xl ">
+                            <div class="mx-10 bg-white text-right text-3xl border-t border-black mt-5 pt-5 font-semibold">
                                 <span id="total"></span>
                             </div>
 
@@ -60,7 +60,7 @@
 
                             <div class="flex justify-end  my-3 pb-10 m-4 px-5">
                                 <a href="order.php">
-                                    <button  class="bg-orange-500 hover:bg-orange-400 text-white py-2 px-5  font-bold rounded-2xl transition duration-300">
+                                    <button  class="bg-black border-2 text-white  hover:bg-gray-600 py-2 px-5  font-bold rounded-2xl transition duration-300">
                                         CHECK OUT
                                     </button>                                
                                 </a>
@@ -184,12 +184,12 @@
                     </div>
 
                     
-            <div class="mt-auto bg-[#A98B72] text-white text-center py-4">
-                &copy; 2025 RETHRY. All Rights Reserved. |
-                <a href="#" class="text-yellow-400 hover:underline mx-2">Terms of Service</a> |
-                <a href="#" class="text-yellow-400 hover:underline mx-2">FAQs</a> |
-                <a href="#" class="text-yellow-400 hover:underline mx-2">Philippines</a> |
-            </div>
+                    <div class="mt-auto bg-pink-100 text-gray-500 text-center py-4">
+                        &copy; 2025 RETHRY. All Rights Reserved. |
+                        <a href="#" class="text-gray-500 hover:underline mx-2">Terms of Service</a> |
+                        <a href="#" class="text-gray-500 hover:underline mx-2">FAQs</a> |
+                        <a href="#" class="text-gray-500 hover:underline mx-2">Philippines</a> |
+                    </div>
             
         </footer>
 
