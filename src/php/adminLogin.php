@@ -158,7 +158,6 @@
 
             <div class="bg-[url('/ThriftStore/src/image/backg.jpg')] bg-center bg-cover px-6 min-h-screen grid place-items-center">
             <div class="bg-white p-11   rounded-3xl shadow-2xl w-1/2 ">
-            <img src="/ThriftStore/src/image/rethry.png" alt="Logo" class="w-12 h-9 mr-12">
             <h2 class=" pt-1 text-4xl font-bold tracking-tight text-gray-900 text-center">Log In</h2>
             <form method="POST">
                 <div class="mt-10">
@@ -170,7 +169,7 @@
                     <input type="password" minlength="8" placeholder="Enter your password" name="password" id="password" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-orange-500 focus:bg-white focus:outline-none" required>
                 </div>
                 <div class="mt-10">
-                    <button type="submit" class="w-fit ml-56 font-semibold mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl">
+                    <button type="submit" class="w-fit ml-60 font-semibold mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl">
                         <p class="text-center text-lg px-5 font-bold">
                             Log In
                         </p>

@@ -198,7 +198,6 @@
 
     <div class="bg-[url('/ThriftStore/src/image/backg.jpg')] bg-center bg-cover px-6 min-h-screen grid place-items-center">
         <div class="bg-white p-12 rounded-3xl shadow-2xl w-1/2">
-        <img src="/ThriftStore/src/image/rethry.png" alt="Logo" class="w-12 h-9 mr-12">
         <h2 class=" pt-1 text-4xl font-bold tracking-tight text-gray-900 text-center">Create Account</h2>
             <form action="adminSignup.php" method="POST">
                 <!-- NAME -->

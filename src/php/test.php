@@ -1,70 +1,67 @@
+<?php
+session_start();
+include("config/database.php");
+
+// When form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'] ?? '';
+    $password = $_POST['password'] ?? '';
+
+    // Find user by email
+    $sql = "SELECT * FROM thrift_db WHERE email = ?";
+    $stmt = mysqli_prepare($con, $sql);
+    mysqli_stmt_bind_param($stmt, "s", $email); // "s" for string
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+
+    if ($user = mysqli_fetch_assoc($result)) {
+        // Check password
+        if (password_verify($password, $user['password'])) {
+            $_SESSION['user_id'] = $user['id']; // Save ID to session
+            header("Location: dashboard.php"); // Redirect to dashboard
+            exit();
+        } else {
+            $error = "Invalid password.";
+        }
+    } else {
+        $error = "User not found.";
+    }
+
+    mysqli_stmt_close($stmt);
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Dashboard</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .sidebar { width: 200px; background: #333; color: #fff; position: fixed; height: 100vh; padding: 20px; }
-        .sidebar a { color: #fff; display: block; margin: 10px 0; text-decoration: none; }
-        .content { margin-left: 220px; padding: 20px; }
-        .card { background: #f4f4f4; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
-        .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-        table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
-    </style>
+    <title>Login</title>
+    <link href="./output.css" rel="stylesheet">
 </head>
-<body>
+<body class="flex items-center justify-center h-screen bg-gray-100">
 
-<div class="sidebar">
-    <h2>Admin</h2>
-    <a href="#">Dashboard</a>
-    <a href="#">Orders</a>
-    <a href="#">Products</a>
-    <a href="#">Customers</a>
-    <a href="#">Logout</a>
-</div>
+<div class="bg-white p-8 rounded shadow-md w-96">
+    <h1 class="text-2xl font-bold mb-6 text-center">Admin Login</h1>
 
-<div class="content">
-    <h1>Dashboard</h1>
+    <?php if (!empty($error)): ?>
+        <div class="bg-red-100 text-red-700 p-2 mb-4 rounded"><?php echo $error; ?></div>
+    <?php endif; ?>
 
-    <div class="grid">
-        <div class="card">
-            <h3>Total Sales</h3>
-            <p>$<?php echo number_format($totalSales, 2); ?></p>
+    <form method="POST">
+        <div class="mb-4">
+            <label>Email</label>
+            <input type="email" name="email" required class="w-full px-3 py-2 border rounded">
         </div>
-        <div class="card">
-            <h3>Total Orders</h3>
-            <p><?php echo $totalOrders; ?></p>
-        </div>
-        <div class="card">
-            <h3>Total Products</h3>
-            <p><?php echo $totalProducts; ?></p>
-        </div>
-        <div class="card">
-            <h3>Total Customers</h3>
-            <p><?php echo $totalCustomers; ?></p>
-        </div>
-    </div>
 
-    <h2>Recent Orders</h2>
-    <table>
-        <tr>
-            <th>Order ID</th>
-            <th>Customer</th>
-            <th>Total</th>
-            <th>Date</th>
-        </tr>
-        <?php while($order = $recentOrdersQuery->fetch_assoc()): ?>
-        <tr>
-            <td><?php echo $order['id']; ?></td>
-            <td><?php echo $order['customer_name']; ?></td>
-            <td>$<?php echo number_format($order['total_amount'], 2); ?></td>
-            <td><?php echo $order['order_date']; ?></td>
-        </tr>
-        <?php endwhile; ?>
-    </table>
+        <div class="mb-6">
+            <label>Password</label>
+            <input type="password" name="password" required class="w-full px-3 py-2 border rounded">
+        </div>
+
+        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded">
+            Login
+        </button>
+    </form>
 </div>
 
 </body>

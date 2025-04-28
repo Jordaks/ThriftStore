@@ -1058,14 +1058,6 @@
                     <div class="grid grid-cols-3 gap-4 p-6">
                         <div>
                             <h5 class="mr-20 ml-40 text-l font-bold tracking-tight text-gray-900"><section id="about">ABOUT THRIFT SHOP</section></h5>
-                        <!--   <span class="mr-20 ml-40 text-l tracking-tight text-gray-900">
-                                <pre>
-        RETHRY is a modern thrift shop wher
-        you handpick pieces and turn them
-        into your own perfect 
-                                </pre> 
-                                
-                            </span> -->
                             <br>
                             <span class="ml-44 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
                                 <a href="about.php" title="About Us" target="_blank">
