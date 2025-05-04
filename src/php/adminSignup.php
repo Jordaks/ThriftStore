@@ -2,7 +2,16 @@
     include ("../../config/connection.php"); 
     session_start();
 
-    $authenticated = isset($_SESSION["email"]);
+    $authenticated = false;
+    if (isset($_SESSION["usertype"])) {
+        $authenticated = $_SESSION["usertype"] !== "admin";
+        $authenticated = true;
+    }else {
+        if (isset($_SESSION["usertype"])) {
+            $authenticated = $_SESSION["usertype"] !== "user";
+            $authenticated = false;
+        }
+    }
 
     // Initialize variables
     $first_name = $last_name = $email = $phone = $house_number = $zone = $barangay = $city = $province = $password = "";
@@ -20,7 +29,7 @@
         $city = $_POST['city']; 
         $province = $_POST['province'];
         $password = $_POST['password'];
-
+        $usertype = $_POST['usertype'];
         $error = false;
 
         // Validate First and Last Name
@@ -79,8 +88,28 @@
         if (!$error) {
             $encpass = md5($password); // You may want to use a stronger encryption like password_hash() later.
 
-            $query = "INSERT INTO thrift_db (first_Name, last_Name, email, phone_Number, house_Number, zone, barangay, city, province, password) 
-                        VALUES ('$first_name', '$last_name', '$email', '$phone', '$house_number', '$zone', '$barangay', '$city', '$province', '$encpass')";
+            $query = "INSERT INTO thrift_db (first_Name, 
+                                            last_Name, 
+                                            email, 
+                                            phone_Number, 
+                                            house_Number, 
+                                            zone, 
+                                            barangay, 
+                                            city, 
+                                            province,
+                                            password,
+                                            usertype) 
+                        VALUES ('$first_name',
+                                '$last_name',
+                                '$email', 
+                                '$phone', 
+                                '$house_number', 
+                                '$zone', 
+                                '$barangay', 
+                                '$city', 
+                                '$province',
+                                '$encpass',
+                                '$usertype')";
 
             if (mysqli_query($con, $query)) {
                 echo "<script>alert('Successfully Added New Admin');</script>";
@@ -225,8 +254,8 @@
                     <label for="phone" class="block font-semibold text-m text-gray-700 mb-2">Phone</label>
                     <div class="flex items-center gap-2">
                         <span class="text-center px-4 py-3 rounded-lg bg-gray-200 font-bold">+63</span>
-                        <input 
-                            type="text" placeholder="Enter your phone number" name="phone" id="phone" value="<?= htmlspecialchars($phone) ?>"  class="w-full px-4 py-3 rounded-lg bg-gray-200 border focus:border-orange-500 focus:bg-white focus:outline-none" required>
+                                <input 
+                                    type="text" placeholder="e.g., 9123456789" name="phone" id="phone" value="<?= htmlspecialchars($phone) ?>"  class="w-full px-4 py-3 rounded-lg bg-gray-200 border focus:border-orange-500 focus:bg-white focus:outline-none" required>
                     </div>
                     <span class="text-danger text-sm"><?= $phone_error ?></span>
                 </div>
@@ -235,7 +264,7 @@
                 <div class="mt-4 flex justify-between mr-2">
                     <div class="mt-7">
                         <label for="house_number" class="block font-semibold text-m text-gray-00">House No.</label>
-                        <input type="text" placeholder="Enter your house number" name="house_number" id="house_number" value="<?= htmlspecialchars($house_number) ?>" class="px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-orange-500 focus:bg-white focus:outline-none" required>
+                        <input type="text" placeholder="Enter your house.no" name="house_number" id="house_number" value="<?= htmlspecialchars($house_number) ?>" class="px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-orange-500 focus:bg-white focus:outline-none" required>
                     </div>
                     <div class="mt-7 left-5">
                         <label for="zone" class="block font-semibold text-m text-gray-00">Zone</label>
@@ -256,6 +285,8 @@
                     <label for="province" class="block font-semibold text-m text-gray-00">Province</label>
                     <input type="text" placeholder="Enter your province" name="province" id="province" value="<?= htmlspecialchars($province) ?>" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-orange-500 focus:bg-white focus:outline-none" required>
                 </div>
+
+                <input type="text" name="usertype" value="user" hidden>
 
                 <!-- PASSWORD -->
                 <div class="mt-7">

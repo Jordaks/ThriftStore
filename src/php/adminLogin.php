@@ -32,14 +32,17 @@
                         $_SESSION["barangay"] = $admin_data["barangay"];
                         $_SESSION["city"] = $admin_data["city"];
                         $_SESSION["province"] = $admin_data["province"];
-                        // Redirect to index.php
-                        // Check if the user is an admin
-                        if ($email === "admin@gmail.com" && $password === "Admin@123") {
-                            // Redirect to Admin Dashboard if admin
+
+                        // Check for admin
+                        if ($email === "admin@gmail.com" && $encpass === md5("Admin@123")) {
+                            $_SESSION['is_admin'] = true;
+                            $_SESSION['email'] = $email;
                             header("Location: ../../dashboard.php");
                             exit();
                         } else {
-                            // Redirect to regular index if not admin
+                            // In a real app, you'd check this against a user database
+                            $_SESSION['is_admin'] = false;
+                            $_SESSION['email'] = $email;
                             header("Location: ../../index.php");
                             exit();
                         }

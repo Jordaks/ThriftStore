@@ -1,6 +1,6 @@
 <?php
 
-include ("config/connection.php");
+include ("../../config/connection.php"); 
 session_start();    
 
 
@@ -59,10 +59,11 @@ session_start();
             </p>
         </div>
         <nav class="mt-10 font-bold">
-            <a href="dashboard.php" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Dashboard</a>
-            <a href="./src/php/products.php" class="block py-8 px-4 rounded hover:bg-pink-50 text-gray-700">Products</a>
-            <a href="./src/php/product_order.php" class="block py-8 px-4 rounded hover:bg-pink-50 text-gray-700">Orders</a>
-            <a href="./src/php/customers.php" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Customers</a>
+            <a href="../../dashboard.php" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Dashboard</a>
+            <a href="products.php" class="block py-8 px-4 rounded hover:bg-pink-50 text-gray-700">Products</a>
+            <a href="product_order.php" class="block py-8 px-4 rounded hover:bg-pink-50 text-gray-700">Orders</a>
+            <a href="customers.php" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Customers</a>
+            
         </nav>
     </div>
 
@@ -79,51 +80,15 @@ session_start();
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             
             <!-- Card 1 -->
-            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-                <h2 class="text-lg font-semibold text-gray-700 mb-2">Total Sales</h2>
-                        <?php
-                            $query = "SELECT SUM(price) AS total_revenue FROM orders";
-                            $result = mysqli_query($con, $query);
-                            $row = mysqli_fetch_assoc($result);
-                            $total_revenue = $row['total_revenue'] ?? 0;
-                        ?>
-                    <p class="text-2xl font-bold text-green-600">₱<?php echo number_format($total_revenue, 2); ?></p>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-                    <h2 class="text-lg font-semibold text-gray-700 mb-2">Orders</h2>
-                        <?php
-                            $query = "SELECT COUNT(*) AS total_orders FROM orders";
-                            $result = mysqli_query($con, $query);
-                            $row = mysqli_fetch_assoc($result);
-                            $total_orders = $row['total_orders'] ?? 0;
-                        ?>
-                    <p class="text-2xl font-bold text-blue-600"><?php echo $total_orders; ?></p>
-                
-            </div>
-
-            <!-- Card 3 -->
-            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-                <a href="./src/php/customers.php">
-                    <h2 class="text-lg font-semibold text-gray-700 mb-2">Customers</h2>
-                        <?php
-                            $query = "SELECT COUNT(*) AS customer_count FROM thrift_db WHERE email != 'admin@gmail.com'";
-                            $result = mysqli_query($con, $query);
-                            $row = mysqli_fetch_assoc($result);
-                            $customer_count = $row['customer_count'] ?? 0;
-                        ?>
-                    <p class="text-2xl font-bold text-purple-600"><?php echo $customer_count; ?></p>
-                </a>
             
-            </div>
 
         </div>  
 
         <div class="mt-10">
-            <h2 class="text-2xl font-semibold mb-4">Recent Orders</h2>
+            <h2 class="text-2xl font-semibold mb-4"> Orders</h2>
             <div class="overflow-x-auto">
                 <table class="min-w-full bg-white rounded-lg shadow">
+                
                     <thead>
                         <tr>
                             <th class="py-2 px-4 border-b text-left">Order ID</th>

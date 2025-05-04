@@ -1,8 +1,11 @@
 <?php   
-   include ("../../config/database.php"); // Corrected path to database.php
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+   include ("../../config/connection.php"); // Corrected path to database.php
 
-   session_start();    
-   $authenticated = isset($_SESSION["email"]);
+
+    session_start();    
+    $authenticated = isset($_SESSION["email"]);
 
 ?>
 
@@ -14,12 +17,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/png" href="/ThriftStore/src/image/R.png"/>
+    <link rel="icon" type="image/png" href="/ThriftStore/src/image/rethry.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Horizon&display=swap" rel="stylesheet">
     <title>ORDER</title>
 </head>
-<body class="bg-orange-50">
+<body class="bg-pink-50">
 
 
         <div >
@@ -28,10 +31,10 @@
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div class="hidden sm:ml-6 sm:block">
                             <div class=" flex space-x-4">
-                            <img src="/ThriftStore/src/image/R.png" alt="Logo" class="w-10 h-9">
-                            <p class="text-[#A98B72] font-bold text-3xl font-horizon">RETHRY</p> <p class="text-[#A98B72] font-bold text-2xl">|</p> <p class="text-[#A98B72] font-bold text-3xl pr-60 font-horizon">CHECKOUT</p>
+                            <img src="/ThriftStore/src/image/rethry.png" alt="Logo" class="w-10 h-9">
+                            <p class="text-black  font-bold text-3xl font-horizon">RETHRY</p> <p class="text-black font-bold text-2xl">|</p> <p class="text-black  font-bold text-3xl pr-40 font-horizon">SHOPPING CART</p>
                             <span class="pl-96">
-                                <a class="text-[#A98B72] hover:underline hover:text-[#B79C81] font-semibold text-xl font-bevan" href="../../index.php">← CONTINUE SHOPPING</a>
+                                <a class="text-black hover:underline hover:text-gray-600 font-semibold text-xl font-bevan" href="../../index.php">← CONTINUE SHOPPING</a>
                             </span>
                             </div>
                         </div>
@@ -39,42 +42,58 @@
                     
                 </div>
             </nav>
-                <div class="bg-orange-100 rounded-xl pt-5 m-4 shadow-2xl ">
+                <div class="bg-white rounded-xl pt-5 m-4 shadow-2xl ">
                         <h3 class="font-bold ml-10 text-2xl"><i class="fa-solid fa-location-dot mr-5"></i>Delivery Address</h3>
                     <div class=" px-16 rounded-3xl  w-full">
-                        <div class="flex justify-between items-center text-gray-700 m-5 py-10 pt-2 text-lg font-semibold">
-                            <?php echo $_SESSION["name"] ?? "Not set"; ?>
-                            <span class=""><?php echo $_SESSION["phone"] ?? "Not set"; ?></span>
-                            <span class="pr-80 mr-44"><?php echo $_SESSION["address"] ?? "Not set"; ?></span>
+                        <div class="flex justify-between items-center pb-10 text-gray-700 m-5 text-lg font-semibold">
+                                <div class="flex justify-between items-center text-gray-700 mt-10 pt-2 text-lg font-semibold">
+                                    <p>
+                                        <span><?php echo $_SESSION["first_name"] ?? "Not set"; ?></span>
+                                        <span><?php echo $_SESSION["last_name"] ?? "Not set"; ?></span>
+                                    </p>
+                                </div>
+                            
+                            <div class="flex justify-between items-center text-gray-700 mt-10 pt-2 text-lg font-semibold">
+                                <span><?php echo $_SESSION["email"] ?? "Not set"; ?></span>
+                            </div>
+
+                            <div class="flex justify-between items-center  text-gray-700  font-semibold mt-10 pt-2 text-lg ">
+                                <p>
+                                    <span><?php echo $_SESSION["house_number"] ?? "Not set"; ?></span>
+                                    <span><?php echo $_SESSION["zone"] ?? "Not set"; ?></span>
+                                    <span><?php echo $_SESSION["city"] ?? "Not set"; ?></span>
+                                    <span><?php echo $_SESSION["province"] ?? "Not set"; ?></span>
+                                </p>
+                                <p class="ml-16"><p>+63</p> <span><?php echo $_SESSION["phone"] ?? "Not set"; ?></span></p>
+
+                            </div>
 
                         </div>
 
                     </div>
                 </div>
 
-                        <div class="flex justify-between p-8 items-center bg-orange-100 text-gray-700 m-5 py-10bg-orange-100 rounded-xl shadow-2xl  text-lg font-semibold">
+                        <div class="flex justify-between p-8 items-center bg-white text-gray-700 m-5 py-10bg-orange-100 rounded-xl shadow-2xl  text-lg font-semibold">
                             <h3 class="font-bold ml-32 mr-10 pr-3  text-2xl">PRODUCTS</h3>
-                            <h4 class="font-semibold pr-7 text-2xl">Color/Size</h4>
+                            <h4 class="font-semibold pr-7 text-2xl">Color | Size</h4>
                             <h4 class="font-semibold pl-5 text-2xl">Price</h4>
                             <h4 class="font-semibold mr-3 text-2xl">Remove</h4>
                         </div>
 
-                        <div class="bg-orange-100 rounded-xl m-4 shadow-2xl ">
+                        <div class="bg-white rounded-xl m-4 shadow-2xl ">
                             <ul class="" id="cartItems"></ul>
                         </div>
 
-                        <div class="bg-orange-100 rounded-xl m-4 shadow-2xl ">
+                        <div class="bg-white rounded-xl m-4 shadow-2xl ">
                             <div class="mx-10 text-right text-3xl border-t border-black mt-5 pt-5 font-semibold">
                                 <span id="total"></span>
                             </div>
 
                             <span id="cart-count" style="display: none;"></span>
                         <div class="flex justify-end  my-3 pb-10 m-4 px-5">
-                        <a href="../../index.php" >
-                                <button class="bg-orange-500 text-white py-2 px-5  font-bold rounded-2xl hover:bg-orange-400 transition duration-300" onclick="alert('Thank you! Your order has been placed successfully.')">                                  
-                                    PLACE ORDER
-                                </button>
-                            </a>
+                            <button class="bg-black border-2 text-white hover:bg-gray-600 py-2 px-5 font-bold rounded-2xl transition duration-300" onclick="submitOrder()">
+                                PLACE ORDER
+                            </button>
                         </div>                     
                     </div>
                         
@@ -195,11 +214,11 @@
                     </div>
 
                     
-            <div class="mt-auto bg-[#A98B72] text-white text-center py-4">
-                &copy; 2025 RETHRY. All Rights Reserved. |
-                <a href="#" class="text-yellow-400 hover:underline mx-2">Terms of Service</a> |
-                <a href="#" class="text-yellow-400 hover:underline mx-2">FAQs</a> |
-                <a href="#" class="text-yellow-400 hover:underline mx-2">Philippines</a> |
+            <div class="mt-auto bg-pink-100 text-gray-500 text-center py-4">
+                &copy; <?php echo date("Y"); ?> RETHRY. All rights reserved. |
+                <a href="#" class="text-gray-500 hover:underline mx-2">Terms of Service</a> |
+                <a href="#" class="text-gray-500 hover:underline mx-2">FAQs</a> |
+                <a href="#" class="text-gray-500 hover:underline mx-2">Philippines</a> |
             </div>
             
         </footer>
@@ -213,7 +232,8 @@
         let total = 0;
 
         cart.forEach((item, index) => {
-            const subtotal = item.price * item.quantity;
+            const quantity = item.quantity ?? 1;
+            const subtotal = item.price * quantity;
             total += subtotal;
 
             const li = document.createElement('li');
@@ -231,7 +251,6 @@
                     <h3 class="text-xl font-semibold text-gray-800">${item.name}</h3>
                     <p class="text-l text-gray-500">${item.color} | ${item.size}</p>
                     <p class="text-xl text-center font-bold text-gray-900 mt-1">₱${item.price}</p>
-
                 <!-- Quantity and Remove -->
                     <button class="remove-item text-red-500 hover:text-red-600" onclick="removeItem(${index})">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
@@ -264,6 +283,40 @@
         }
 
         renderCart();
+        
+
+
+
+        function submitOrder() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            if (cart.length === 0) {
+                alert("Cart is empty.");
+                return;
+            }
+
+            fetch('place_order.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: 'cart=' + encodeURIComponent(JSON.stringify(cart))
+            })
+            .then(res => res.text())
+            .then(data => {
+                if (data.trim() === "success") {
+                    alert("Order placed successfully!");
+                    localStorage.removeItem('cart');
+                    window.location.href = "../../index.php"; // redirect
+                } else {
+                    alert("Failed to place order: " + data);
+                }
+            })
+            .catch(err => {
+                console.error("Error placing order:", err);
+                alert("Error placing order.");
+            });
+        }
+
     </script>
 
 </body>

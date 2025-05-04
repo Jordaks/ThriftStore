@@ -1,5 +1,5 @@
 <?php   
-   include ("../../config/database.php"); // Corrected path to database.php
+   include ("../../config/connection.php"); // Corrected path to database.php
 
     session_start();    
     $authenticated = isset($_SESSION["email"]);
@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/png" href="/ThriftStore/src/image/R.png"/>
+    <link rel="icon" type="image/png" href="/ThriftStore/src/image/rethry.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Horizon&display=swap" rel="stylesheet">
     <title>SHOPPING CART</title>
@@ -27,7 +27,7 @@
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div class="hidden sm:ml-6 sm:block">
                             <div class=" flex space-x-4">
-                            <img src="/ThriftStore/src/image/R.png" alt="Logo" class="w-10 h-9">
+                            <img src="/ThriftStore/src/image/rethry.png" alt="Logo" class="w-10 h-9">
                             <p class="text-black  font-bold text-3xl font-horizon">RETHRY</p> <p class="text-black font-bold text-2xl">|</p> <p class="text-black  font-bold text-3xl pr-40 font-horizon">SHOPPING CART</p>
                             <span class="pl-96">
                                 <a class="text-black hover:underline hover:text-gray-600 font-semibold text-xl font-bevan" href="../../index.php">← CONTINUE SHOPPING</a>
@@ -41,7 +41,7 @@
         
                         <div class="flex  bg-white justify-between p-8 items-center  text-gray-700 m-5 py-10 rounded-xl shadow-2xl  text-lg font-semibold">
                             <h3 class="font-bold ml-32 mr-10 pr-3  text-2xl">PRODUCTS</h3>
-                            <h4 class="font-semibold pr-7 text-2xl">Color/Size</h4>
+                            <h4 class="font-semibold pr-7 text-2xl">Color | Size</h4>
                             <h4 class="font-semibold pl-5 text-2xl">Price</h4>
                             <h4 class="font-semibold mr-3 text-2xl">Remove</h4>
                         </div>
@@ -59,11 +59,11 @@
 
 
                             <div class="flex justify-end  my-3 pb-10 m-4 px-5">
-                                <a href="order.php">
-                                    <button  class="bg-black border-2 text-white  hover:bg-gray-600 py-2 px-5  font-bold rounded-2xl transition duration-300">
+                                <button class="bg-black border-2 text-white hover:bg-gray-600 py-2 px-5 font-bold rounded-2xl transition duration-300"
+                                onclick="submitOrder()">
                                         CHECK OUT
-                                    </button>                                
-                                </a>
+                                </button>                                
+                                
                             </div>
                         </div>
                         
@@ -253,6 +253,20 @@
         }
 
         renderCart();
+
+        function submitOrder() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            if (cart.length === 0) {
+            alert("Your cart is empty. Please add items before placing an order.");
+            return;
+            }
+
+            if (cart.length >= 1) {
+                // Proceed to order logic
+                window.location.href = "order.php";
+            }
+        }
+        
     </script>
 
 

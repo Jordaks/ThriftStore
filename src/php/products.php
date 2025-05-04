@@ -85,9 +85,14 @@ if (isset($_SESSION['id'])) {
                 <nav class="flex-1 mt-10 font-bold ">
                     <a href="../../dashboard.php" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Dashboard</a>
                     <a href="products.php" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Products</a>
-                    <a href="#" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Orders</a>
-                    <a href="#" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Customers</a>
-                </nav>
+                    <a href="product_order.php" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Orders</a>
+                    <a href="customers.php" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Customers</a>
+                    <a href="logout.php">
+                        <button class="bg-black border-2 text-white ml-20 hover:bg-gray-600 px-4 py-2 mt-60 rounded-2xl font-semibold hover:bg-gray-600">
+                            Logout
+                        </button>
+                    </a>
+                </nav>  
             </div>
 
             <!-- Main Content -->
