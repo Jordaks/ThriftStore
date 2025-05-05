@@ -306,7 +306,7 @@
                 if (data.trim() === "success") {
                     alert("Order placed successfully!");
                     localStorage.removeItem('cart');
-                    window.location.href = "../../index.php"; // redirect
+                    window.location.href = "receipt.php"; // redirect
                 } else {
                     alert("Failed to place order: " + data);
                 }

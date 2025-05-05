@@ -383,7 +383,6 @@ if (isset($_SESSION['id'])) {
                                         <p class="mt-1 text-sm text-black product-color">Brown/Black</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">42</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱999</p>
                                     </div>
                                 </div>
@@ -398,7 +397,6 @@ if (isset($_SESSION['id'])) {
                                         <p class="mt-1 text-sm text-black product-color">Stripe</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">43</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱849</p>
                                     </div>
                                 </div>
@@ -413,7 +411,6 @@ if (isset($_SESSION['id'])) {
                                         <p class="mt-1 text-sm text-black product-color">Aphricot</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">42</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱949</p>
                                     </div>
                                 </div>
@@ -428,7 +425,6 @@ if (isset($_SESSION['id'])) {
                                         <p class="mt-1 text-sm text-black product-color">Purple</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">43</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2000</p>
                                     </div>
                                 </div>
@@ -443,7 +439,6 @@ if (isset($_SESSION['id'])) {
                                         <p class="mt-1 text-sm text-black product-color">Orange</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">44</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱1200</p>
                                     </div>
                                 </div>
@@ -458,7 +453,6 @@ if (isset($_SESSION['id'])) {
                                         <p class="mt-1 text-sm text-black product-color">Red</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">40</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱1399</p>
                                     </div>
                                 </div>
@@ -473,7 +467,6 @@ if (isset($_SESSION['id'])) {
                                         <p class="mt-1 text-sm text-black product-color">Black</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">44</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱899</p>
                                     </div>
                                 </div>
@@ -488,7 +481,6 @@ if (isset($_SESSION['id'])) {
                                         <p class="mt-1 text-sm text-black product-color">Green/Pink</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">45</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2550</p>
                                     </div>
                                 </div>
