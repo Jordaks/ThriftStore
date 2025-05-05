@@ -49,7 +49,7 @@ $orders = $result->fetch_all(MYSQLI_ASSOC);
         <div class="text-center mb-6">
             <h1 class="text-2xl font-bold">THRIFT SHOP</h1>
             <p class="text-gray-600">Ave. Mabini Street, Tanauan City, Batangas</p>
-            <p class="text-gray-600">Phone: 0960-219-3250 | Email: thriftshopagmail.com</p>
+            <p class="text-gray-600">Phone: 0960-219-3250 | Email: thriftshop@gmail.com</p>
             <hr class="my-4">
             <h2 class="text-lg font-semibold">OFFICIAL RECEIPT</h2>
         </div>
@@ -58,7 +58,7 @@ $orders = $result->fetch_all(MYSQLI_ASSOC);
         <div class="mb-6">
             <h3 class="font-semibold">Customer Information</h3>
             <p>Name: <?= htmlspecialchars($orders[0]['full_name']) ?></p>
-            <p>Phone: <?= htmlspecialchars($orders[0]['phone']) ?></p>
+            <p>Phone: +63 <?= htmlspecialchars($orders[0]['phone']) ?></p>
             <p>Address: <?= htmlspecialchars($orders[0]['address']) ?></p>
             <p>Email: <?= htmlspecialchars($orders[0]['user_email']) ?></p>
             <p>Date: <?= date("F j, Y, g:i a", strtotime($orders[0]['order_date'])) ?></p>

@@ -97,8 +97,14 @@ if (isset($_SESSION['id'])) {
 
             <!-- Main Content -->
             <div class="flex-1 ml-64 p-6 bg-gray-50 min-h-screen">
-                <h1 class="text-3xl font-bold mb-6">DASHBOARD</h1>
-
+            <div class="flex justify-between items-center mb-20">
+                <h1 class="text-3xl font-bold">DASHBOARD</h1>
+                <a href="src/php/logout.php">
+                    <button class="bg-black border-2 text-white hover:bg-gray-600 px-4 py-2 rounded-2xl font-semibold">
+                        Logout
+                    </button>
+                </a>
+            </div>
                 <main>
 
                     <div class="bg-white rounded-lg p-6">

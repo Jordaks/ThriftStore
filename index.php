@@ -595,7 +595,7 @@
                                         <p class="mt-1 text-sm text-black product-color">Brown/Black</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">42</p>
+                                        <p class="text-sm text-gray-500 product-size">Large</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱999</p>
                                     </div>
                                 </div>
@@ -620,7 +620,7 @@
                                         <p class="mt-1 text-sm text-black product-color">Stripe</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">43</p>
+                                        <p class="text-sm text-gray-500 product-size">Large</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱849</p>
                                     </div>
                                 </div>
@@ -645,7 +645,7 @@
                                         <p class="mt-1 text-sm text-black product-color">Aphricot</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">42</p>
+                                        <p class="text-sm text-gray-500 product-size">Medium</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱949</p>
                                     </div>
                                 </div>
@@ -670,7 +670,7 @@
                                         <p class="mt-1 text-sm text-black product-color">Purple</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">43</p>
+                                        <p class="text-sm text-gray-500 product-size">Small</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2000</p>
                                     </div>
                                 </div>
@@ -695,7 +695,7 @@
                                         <p class="mt-1 text-sm text-black product-color">Orange</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">44</p>
+                                        <p class="text-sm text-gray-500 product-size">Large</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱1200</p>
                                     </div>
                                 </div>
@@ -720,7 +720,7 @@
                                         <p class="mt-1 text-sm text-black product-color">Red</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">40</p>
+                                        <p class="text-sm text-gray-500 product-size">Large</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱1399</p>
                                     </div>
                                 </div>
@@ -745,7 +745,7 @@
                                         <p class="mt-1 text-sm text-black product-color">Black</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">44</p>
+                                        <p class="text-sm text-gray-500 product-size">Medium</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱899</p>
                                     </div>
                                 </div>
@@ -770,7 +770,7 @@
                                         <p class="mt-1 text-sm text-black product-color">Green/Pink</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 product-size">45</p>
+                                        <p class="text-sm text-gray-500 product-size">Large</p>
                                         <p class="mt-1 text-sm font-bold text-gray-900 product-price">₱2550</p>
                                     </div>
                                 </div>
@@ -1064,13 +1064,13 @@
                             <h5 class="mr-20 ml-40 text-l font-bold tracking-tight text-gray-900"><section id="about">ABOUT THRIFT SHOP</section></h5>
                             <br>
                             <span class="ml-44 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="about.php" title="About Us" target="_blank">
+                                <a href="src/php/about.php" title="About Us" target="_blank">
                                     About Us
                                 </a>
                             </span>
                             <br>
                             <span class="ml-44 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Privacy & Policy" target="_blank">
+                                <a href="src/php/privacy.php" title="Privacy & Policy" target="_blank">
                                     Privacy & Policy
                                 </a> 
                             </span>
@@ -1080,49 +1080,26 @@
                             <h5 class=" ml-30 text-l text-center font-bold tracking-tight text-gray-900">CUSTOMER SERVICE</h5>
                             <br>
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Contact" target="_blank">
+                                <a href="src/php/contact.php" title="Contact" target="_blank">
                                 Contact Us
                                 </a>
                             </span>
                             <br>
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Logout" target="_blank">
+                                <a href="src/php/payment.php" title="Logout" target="_blank">
                                 Payment Methods
                                 </a>
                             </span>
+                            
                             <br>
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Shipping" target="_blank">
-                                Free Shipping
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Return" target="_blank">
-                                Return & Refund
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Cart" target="_blank">
-                                Help Centre
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Order" target="_blank">
-                                Order Tracking
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="ThriftStore/src/php/login.php" title="Login" target="_blank">
+                                <a href="src/php/adminLogin.php" title="Login" target="_blank">
                                 Login
                                 </a>
                             </span>
                             <br>
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="ThriftStore/src/php/signup.php" title="Register" target="_blank">
+                                <a href="src/php/adminSignup.php" title="Register" target="_blank">
                                 Register
                                 </a>
                             </span>                            
@@ -1150,12 +1127,6 @@
                                 </a>
                             </span>
                             <br>
-                            <span class="ml-44 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400"  >
-                                <a href="https://www.linkedin.com/in/mark-jordan-javier-29b72935a/" title="Mark Jordan Javier" target="_blank">
-                                <i  class="fa-brands fa-linkedin"></i> LinkedIn
-                                </a>
-                            </span>
-                            <br>
                             <span class="ml-44 mb-20 mx-3  hover:scale-110 transition duration-500 hover:text-yellow-400">
                                 <a href="mailto:javiermarkjorda@gmail.com" title="javiermarkjordan" target="_blank">
                                 <i class="fa-solid fa-envelope  fa-1x"></i> Email
@@ -1167,9 +1138,9 @@
                     
             <div class="mt-auto bg-pink-100 text-gray-500 text-center py-4">
                 &copy; <?php echo date("Y"); ?> RETHRY. All rights reserved. |
-                <a href="#" class="text-gray-500 hover:underline mx-2">Terms of Service</a> |
-                <a href="#" class="text-gray-500 hover:underline mx-2">FAQs</a> |
-                <a href="#" class="text-gray-500 hover:underline mx-2">Philippines</a> |
+                <a href="src/php/termsofservice.php" class="text-gray-500 hover:underline mx-2">Terms of Service</a> |
+                <a href="src/php/faqs.php" class="text-gray-500 hover:underline mx-2">FAQs</a> |
+                <a href="#" class="text-gray-500 hover:underline mx-2" onclick="showMap()">Philippines</a> |
             </div>
             
         </footer>
@@ -1247,6 +1218,9 @@
 
         
 
+        function showMap() {
+            window.open("https://www.google.com/maps/place/Philippines", "_blank");
+        }
         </script>
     </body>
 </html>

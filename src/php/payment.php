@@ -1,64 +1,3 @@
-<?php
-    include ("../../config/connection.php"); // Corrected path to database.php
-
-    session_start();    
-    $authenticated = isset($_SESSION["email"]);
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        $encpass = md5($password);
-
-        if(!empty($email) && !empty($encpass)) {
-
-            $query = "SELECT * FROM thrift_db WHERE email = '$email' limit 1";  
-            $result = mysqli_query($con, $query);
-
-            if($result){
-                if($result && mysqli_num_rows($result) > 0){
-                    
-                    $admin_data = mysqli_fetch_assoc($result);
-
-                    if ($admin_data['password'] === $encpass) {
-                        // Assign values from $admin_data to variables
-                        
-                        $_SESSION["user_id"] = $admin_data["user_id"];
-                        $_SESSION["first_name"] = $admin_data["first_Name"];
-                        $_SESSION["last_name"] = $admin_data["last_Name"];
-                        $_SESSION["email"] = $admin_data["email"];
-                        $_SESSION["phone"] = $admin_data["phone_Number"];
-                        $_SESSION["house_number"] = $admin_data["house_Number"];
-                        $_SESSION["zone"] = $admin_data["zone"];
-                        $_SESSION["barangay"] = $admin_data["barangay"];
-                        $_SESSION["city"] = $admin_data["city"];
-                        $_SESSION["province"] = $admin_data["province"];
-
-                        // Check for admin
-                        if ($email === "admin@gmail.com" && $encpass === md5("Admin@123")) {
-                            $_SESSION['is_admin'] = true;
-                            $_SESSION['email'] = $email;
-                            header("Location: ../../dashboard.php");
-                            exit();
-                        } else {
-                            // In a real app, you'd check this against a user database
-                            $_SESSION['is_admin'] = false;
-                            $_SESSION['email'] = $email;
-                            header("Location: ../../index.php");
-                            exit();
-                        }
-                    } 
-                }   
-            }
-            echo "<script> type='text/javascript'> alert('Invalid email or password!')</script>";
-        }
-        else {
-            echo "<script> type='text/javascript'> alert('Invalid email or password!')</script>";
-        }
-    }
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Horizon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Log In</title>
+    <title>Payment Method</title>
 
     <style>
         html {
@@ -83,7 +22,7 @@
         }
     </style>
 </head>
-<body class="bg-pink-50">
+<body class="bg-white">
 
 <nav class="bg-pink-50  p-4 sticky top-0 z-50 shadow-2xl">
                 <div class="container mx-auto flex justify-between items-center">
@@ -159,44 +98,38 @@
                 </div>
             </nav>
 
-            <div class="bg-[url('/ThriftStore/src/image/backg.jpg')] bg-center bg-cover px-6 min-h-screen grid place-items-center">
-            <div class="bg-white p-11   rounded-3xl shadow-2xl w-1/2 ">
-            <h2 class=" pt-1 text-4xl font-bold tracking-tight text-gray-900 text-center">Log In</h2>
-            <form method="POST">
-                <div class="mt-10">
-                    <label for="email" class="block font-semibold text-m text-gray-00">Email</label>
-                    <input type="email" name="email" placeholder="Enter your email" id="email" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-orange-500 focus:bg-white focus:outline-none" required>
-                </div>
-                <div class="mt-7">
-                    <label for="password" class="block font-semibold text-m text-gray-00">Password</label>
-                    <input type="password" minlength="8" placeholder="Enter your password" name="password" id="password" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-orange-500 focus:bg-white focus:outline-none" required>
-                </div>
-                <div class="mt-10">
-                    <button type="submit" class="w-fit ml-60 font-semibold mt-4 bg-black border-2 text-white  hover:bg-gray-600 px-4 py-2 rounded-2xl">
-                        <p class="text-center text-lg px-5 font-bold">
-                            Log In
-                        </p>
-                    </button>
-                </div>
-            </form>
-            <div class="mt-12 text-sm font-semibold text-center">
-                Don't have an account ? <a href="adminSignup.php" class="text-pink-500 hover:text-pink-700">Sign Up</a>
-            </div>
-        </div>
-    </div>
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto py-20 px-6">
+        <section class="text-center mb-16">
+        <h1 class="text-5xl font-extrabold text-black mb-3">Payment Methods</h1>
+        <p class="text-xl text-black max-w-2xl mx-auto">Secure and flexible payment options to make your Rethry experience simple and safe.</p>
+        </section>
 
-    <footer  >
+        <section class="bg-white rounded-3xl shadow-xl p-12 space-y-12 border border-gray-100">
+        <div>
+            <h2 class="text-3xl font-semibold text-black mb-4">Accepted Payment Methods</h2>
+            <ul class="list-disc list-inside space-y-2 text-black leading-relaxed">
+            <li><strong>Cash on Delivery</strong> – Available for selected regions and products</li> <!-- New line -->
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="text-3xl font-semibold text-black mb-4">Security & Encryption</h2>
+            <p class="text-black leading-relaxed">All transactions are encrypted using SSL technology. We never store your credit card information on our servers.</p>
+        </div>
+
+        <div>
+            <h2 class="text-3xl font-semibold text-black mb-4">Issues with Payment?</h2>
+            <p class="text-black leading-relaxed">If your payment fails or you encounter an issue during checkout, please reach out to us at <a href="mailto:rethry@gmail.com" class="text-black hover:underline">rethry@gmail.com</a>. We're here to help.</p>
+        </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+        <footer class="bg-pink-50" >
                     <div class="grid grid-cols-3 gap-4 p-6">
                         <div>
                             <h5 class="mr-20 ml-40 text-l font-bold tracking-tight text-gray-900"><section id="about">ABOUT THRIFT SHOP</section></h5>
-                        <!--   <span class="mr-20 ml-40 text-l tracking-tight text-gray-900">
-                                <pre>
-        RETHRY is a modern thrift shop wher
-        you handpick pieces and turn them
-        into your own perfect 
-                                </pre> 
-                                
-                            </span> -->
                             <br>
                             <span class="ml-44 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
                                 <a href="about.php" title="About Us" target="_blank">
@@ -205,7 +138,7 @@
                             </span>
                             <br>
                             <span class="ml-44 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Privacy & Policy" target="_blank">
+                                <a href="privacy.php" title="Privacy & Policy" target="_blank">
                                     Privacy & Policy
                                 </a> 
                             </span>
@@ -221,69 +154,11 @@
                             </span>
                             <br>
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Logout" target="_blank">
-                                Payment Methods
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Shipping" target="_blank">
-                                Free Shipping
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Return" target="_blank">
-                                Return & Refund
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Cart" target="_blank">
-                                Help Centre
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Order" target="_blank">
-                                Order Tracking
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="log_in.php" title="Login" target="_blank">
-                                Login
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="signup.php" title="Register" target="_blank">
-                                Register
-                                </a>
-                            </span>                            
-                        </div>
-
-
-                        <div>
-                            <h5 class=" ml-30 text-l text-center font-bold tracking-tight text-gray-900">CUSTOMER SERVICE</h5>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Contact" target="_blank">
-                                Contact Us
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
                                 <a href="payment.php" title="Logout" target="_blank">
                                 Payment Methods
                                 </a>
                             </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Cart" target="_blank">
-                                Help Centre
-                                </a>
-                            </span>
+                            
                             <br>
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
                                 <a href="adminLogin.php" title="Login" target="_blank">
@@ -295,46 +170,53 @@
                                 <a href="adminSignup.php" title="Register" target="_blank">
                                 Register
                                 </a>
-                            </span>                        
+                            </span>                          
+                        </div>
+
+
+                        <div class="">
+                            <h5 class=" text-center text-l font-bold tracking-tight text-gray-900">CONTACT US ON</h5>
+                            <br>
+                            <span class="ml-44 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400"  >
+                                <a href="https://www.facebook.com/markjordan.javier" title="Mark Jordan Javier"  target="_blank">
+                                <i class="fa-brands fa-facebook fa-1x "></i> Facebook
+                                </a>
+                            </span>
+                            <br>
+                            <span class="ml-44 mb-20 mx-3  hover:scale-110 transition duration-500 hover:text-yellow-400">
+                                <a href="https://www.instagram.com/imnot_dannnnn/" title="imnot_dannnnn" target="_blank">
+                                <i class="fa-brands fa-instagram fa-1x"></i> Instagram
+                                </a>
+                            </span>
+                            <br>
+                            <span class="ml-44 mb-20 mx-3  hover:scale-110 transition duration-500 hover:text-yellow-400">
+                                <a href="https://www.tiktok.com/@jordamnnnn " title="Jordaks" target="_blank">
+                                <i class="fa-brands fa-tiktok"></i> Tiktok
+                                </a>
+                            </span>
+                            <br>
+                            <span class="ml-44 mb-20 mx-3  hover:scale-110 transition duration-500 hover:text-yellow-400">
+                                <a href="mailto:javiermarkjorda@gmail.com" title="javiermarkjordan" target="_blank">
+                                <i class="fa-solid fa-envelope  fa-1x"></i> Email
+                                </a>
+                            </span>
                         </div>
                     </div>
 
                     
-                    <div class="mt-auto bg-pink-100 text-gray-500 text-center py-4">
-                        &copy; 2025 RETHRY. All Rights Reserved. |
-                        <a href="#" class="text-gray-500 hover:underline mx-2">Terms of Service</a> |
-                        <a href="#" class="text-gray-500 hover:underline mx-2">FAQs</a> |
-                        <a href="#" class="text-gray-500 hover:underline mx-2">Philippines</a> |
-                    </div>
+            <div class="mt-auto bg-pink-100 text-gray-500 text-center py-4">
+                &copy; <?php echo date("Y"); ?> RETHRY. All rights reserved. |
+                <a href="termsofservice.php" class="text-gray-500 hover:underline mx-2">Terms of Service</a> |
+                <a href="faqs.php" class="text-gray-500 hover:underline mx-2">FAQs</a> |
+                <a href="#" class="text-gray-500 hover:underline mx-2" onclick="showMap()">Philippines</a> |
+
+                <script>
+                    function showMap() {
+                        window.open("https://www.google.com/maps/place/Philippines", "_blank");
+                    }
+                </script>
+            </div>
             
         </footer>
-
-        <script>
-                    // animation
-
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        function setActive(link) {
-            navLinks.forEach(el => el.classList.remove('bg-white', 'text-black'));
-            link.classList.add('bg-white', 'text-black', );
-        }
-
-        navLinks.forEach(link => {
-        link.addEventListener('click', function () {
-            setActive(this);
-        });
-        });
-
-        window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY + 150;
-        navLinks.forEach(link => {
-            const section = document.querySelector(link.getAttribute('href'));
-            if (section.offsetTop <= scrollY && section.offsetTop + section.offsetHeight > scrollY) {
-            setActive(link);
-            }
-        });
-        });
-
-        </script>
 </body>
 </html>

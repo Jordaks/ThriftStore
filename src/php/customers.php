@@ -63,18 +63,19 @@ session_start();
             <a href="products.php" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Products</a>
             <a href="product_order.php" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Orders</a>
             <a href="customers.php" class="block py-8 px-4 rounded  hover:bg-pink-50 text-gray-700">Customers</a>
-            <a href="logout.php">
-                        <button class="bg-black border-2 text-white ml-20 hover:bg-gray-600 px-4 py-2 mt-60 rounded-2xl font-semibold hover:bg-gray-600">
-                            Logout
-                        </button>
-            </a>
         </nav>
     </div>
 
     <!-- Main Content -->
     <div class="flex-1 p-6">
-        <h1 class="text-3xl font-bold">DASHBOARD</h1>
-
+    <div class="flex justify-between items-center mb-20">
+                <h1 class="text-3xl font-bold">DASHBOARD</h1>
+                <a href="src/php/logout.php">
+                    <button class="bg-black border-2 text-white hover:bg-gray-600 px-4 py-2 rounded-2xl font-semibold">
+                        Logout
+                    </button>
+                </a>
+            </div>
 
         <div class="mt-10">
         <h2 class="text-2xl font-bold mb-6">CUSTOMERS</h2>

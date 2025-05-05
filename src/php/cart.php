@@ -105,20 +105,8 @@
                             </span>
                             <br>
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Logout" target="_blank">
+                                <a href="payment.php" title="Logout" target="_blank">
                                 Payment Methods
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Shipping" target="_blank">
-                                Free Shipping
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Return" target="_blank">
-                                Return & Refund
                                 </a>
                             </span>
                             <br>
@@ -129,23 +117,18 @@
                             </span>
                             <br>
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Order" target="_blank">
-                                Order Tracking
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="log_in.php" title="Login" target="_blank">
+                                <a href="adminLogin.php" title="Login" target="_blank">
                                 Login
                                 </a>
                             </span>
                             <br>
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="sign_up.php" title="Register" target="_blank">
+                                <a href="adminSignup.php" title="Register" target="_blank">
                                 Register
                                 </a>
-                            </span>                            
+                            </span>                          
                         </div>
+
 
 
                         <div class="">
@@ -166,12 +149,6 @@
                             <span class="ml-44 mb-20 mx-3  hover:scale-110 transition duration-500 hover:text-yellow-400">
                                 <a href="https://www.tiktok.com/@jordamnnnn " title="Jordaks" target="_blank">
                                 <i class="fa-brands fa-tiktok"></i> Tiktok
-                                </a>
-                            </span>
-                            <br>
-                            <span class="ml-44 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400"  >
-                                <a href="https://www.linkedin.com/in/mark-jordan-javier-29b72935a/" title="Mark Jordan Javier" target="_blank">
-                                <i  class="fa-brands fa-linkedin"></i> LinkedIn
                                 </a>
                             </span>
                             <br>
