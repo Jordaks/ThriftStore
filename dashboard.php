@@ -53,7 +53,7 @@ session_start();
     <!-- Sidebar -->
     <div class="w-64 h-screen bg-white shadow-md">
         <div class="p-6  text-5xl font-bold text-pink-400 mb-6">
-            <img src="/ThriftStore/src/image/rethry.png" alt="Logo" class="w-16 h-16 mb-4 ml-17">
+            <img src="/ThriftStore/src/image/rethry.png" alt="Logo" class="w-16 h-14 mb-4 ml-17">
             <p class="ml-7">
                 Admin
             </p>
@@ -92,6 +92,7 @@ session_start();
 
             <!-- Card 2 -->
             <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                <a href="./src/php/product_order.php">
                     <h2 class="text-lg font-semibold text-gray-700 mb-2">Orders</h2>
                         <?php
                             $query = "SELECT COUNT(*) AS total_orders FROM orders";
@@ -100,7 +101,7 @@ session_start();
                             $total_orders = $row['total_orders'] ?? 0;
                         ?>
                     <p class="text-2xl font-bold text-blue-600"><?php echo $total_orders; ?></p>
-                
+                </a>
             </div>
 
             <!-- Card 3 -->
