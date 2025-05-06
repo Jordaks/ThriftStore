@@ -129,7 +129,7 @@
                             <h5 class=" ml-30 text-l text-center font-bold tracking-tight text-gray-900">CUSTOMER SERVICE</h5>
                             <br>
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Contact" target="_blank">
+                                <a href="contact.php" title="Contact" target="_blank">
                                 Contact Us
                                 </a>
                             </span>
@@ -139,8 +139,8 @@
                                 Payment Methods
                                 </a>
                             </span>
+                            
                             <br>
-                                
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
                                 <a href="adminLogin.php" title="Login" target="_blank">
                                 Login
@@ -155,39 +155,32 @@
                         </div>
 
 
-
-                        <div>
-                            <h5 class=" ml-30 text-l text-center font-bold tracking-tight text-gray-900">CUSTOMER SERVICE</h5>
+                        <div class="">
+                            <h5 class=" text-center text-l font-bold tracking-tight text-gray-900">CONTACT US ON</h5>
                             <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Contact" target="_blank">
-                                Contact Us
+                            <span class="ml-44 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400"  >
+                                <a href="https://www.facebook.com/markjordan.javier" title="Mark Jordan Javier"  target="_blank">
+                                <i class="fa-brands fa-facebook fa-1x "></i> Facebook
                                 </a>
                             </span>
                             <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="payment.php" title="Logout" target="_blank">
-                                Payment Methods
+                            <span class="ml-44 mb-20 mx-3  hover:scale-110 transition duration-500 hover:text-yellow-400">
+                                <a href="https://www.instagram.com/imnot_dannnnn/" title="imnot_dannnnn" target="_blank">
+                                <i class="fa-brands fa-instagram fa-1x"></i> Instagram
                                 </a>
                             </span>
                             <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Cart" target="_blank">
-                                Help Centre
+                            <span class="ml-44 mb-20 mx-3  hover:scale-110 transition duration-500 hover:text-yellow-400">
+                                <a href="https://www.tiktok.com/@jordamnnnn " title="Jordaks" target="_blank">
+                                <i class="fa-brands fa-tiktok"></i> Tiktok
                                 </a>
                             </span>
                             <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="adminLogin.php" title="Login" target="_blank">
-                                Login
+                            <span class="ml-44 mb-20 mx-3  hover:scale-110 transition duration-500 hover:text-yellow-400">
+                                <a href="mailto:javiermarkjorda@gmail.com" title="javiermarkjordan" target="_blank">
+                                <i class="fa-solid fa-envelope  fa-1x"></i> Email
                                 </a>
                             </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="adminSignup.php" title="Register" target="_blank">
-                                Register
-                                </a>
-                            </span>                          
                         </div>
                     </div>
 

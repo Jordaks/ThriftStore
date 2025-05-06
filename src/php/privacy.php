@@ -24,7 +24,7 @@
 </head>
 <body class="bg-white">
 
-<nav class="bg-pink-50  p-4 sticky top-0 z-50 shadow-2xl">
+            <nav class="bg-pink-50  p-4 sticky top-0 z-50 shadow-2xl">
                 <div class="container mx-auto flex justify-between items-center">
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
@@ -36,66 +36,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 space-x-4">
-                        
-                    </div>
-                        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 space-x-4">
-                            
-                            <!-- Cart -->
-                        
-                                <?php if($authenticated){ ?>
-                                    <a href="src/php/cart.php">
-                                        <button class="pl-3">
-                                            <span >
-                                                <svg  class="hover:scale-110 transition duration-500 fill-current text-black w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                    <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z" clip-rule="evenodd" />
-                                                </svg>
-                                            </span>
-                                        </button>                                
-                                    </a>
-                                <?php } else { ?>
-                                    <button onclick="alert('Please login first before you order')"  class="pl-3"> 
-                                            <span >
-                                                <svg  class="hover:scale-110 transition duration-500 fill-current text-black w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                    <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z" clip-rule="evenodd" />
-                                                </svg>
-                                            </span>
-                                    </button>
-                                <?php } ?>  
-
-                                <!-- User -->
-
-                                <?php if($authenticated){ ?>
-                                    <p id="cart-count" class="bg-pink-200 text-gray-500 text-xs rounded-full flex items-center justify-center absolute top-7 left-[86%] px-1 py-[2px]">0</p>
-                                    <button onclick="toggleUser()" class="p-3 ">
-                                        <span>
-                                            <svg class="hover:scale-110 transition duration-500 text-gray-800 w-11 h-11"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                            </svg>
-                                        </span>
-                                    </button>
-
-                                <!-- login/sign up -->
-
-                                <?php } else { ?>  
-                                    <div class="hover:scale-110 transition duration-500 relative ml-3 border-2 rounded-xl border-black bg-white hover:border-gray-500">
-                                        <a href="adminLogin.php" target="">
-                                            <button type="button" class="ml-1.5 mr-1.5  hover:scale-110 transition duration-500 relative rounded-full p-1  text-black hover:text-gray-500 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden font-bold"> LOG IN
-                                                <span class="absolute -inset-1.5"></span>
-                                            </button>
-                                        </a>
-                                    </div>
-
-                                    <div class="hover:scale-110 transition duration-500 relative ml-3 border-2 rounded-xl border-black bg-white hover:border-gray-500 ">
-                                    <a href="adminSignup.php" target="">
-                                            <button type="button" class="ml-1.5 mr-1.5 hover:scale-110 transition duration-500 relative rounded-full p-1 text-black hover:text-gray-500 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden font-bold"> SIGN UP
-                                                <span class="absolute -inset-1.5"></span>
-                                            </button>
-                                        </a>
-                                    </div>
-                                <?php } ?>                          
-                        </div>
-                </div>
             </nav>
 
     <!-- Main Content -->

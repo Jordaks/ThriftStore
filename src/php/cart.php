@@ -99,7 +99,7 @@
                             <h5 class=" ml-30 text-l text-center font-bold tracking-tight text-gray-900">CUSTOMER SERVICE</h5>
                             <br>
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Contact" target="_blank">
+                                <a href="contact.php" title="Contact" target="_blank">
                                 Contact Us
                                 </a>
                             </span>
@@ -109,12 +109,7 @@
                                 Payment Methods
                                 </a>
                             </span>
-                            <br>
-                            <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
-                                <a href="" title="Cart" target="_blank">
-                                Help Centre
-                                </a>
-                            </span>
+                            
                             <br>
                             <span class="ml-40 mb-20 hover:scale-110 transition duration-500 hover:text-yellow-400">
                                 <a href="adminLogin.php" title="Login" target="_blank">
@@ -128,7 +123,6 @@
                                 </a>
                             </span>                          
                         </div>
-
 
 
                         <div class="">

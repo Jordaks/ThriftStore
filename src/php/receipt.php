@@ -21,6 +21,7 @@ $orders = $result->fetch_all(MYSQLI_ASSOC);
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="/ThriftStore/src/image/rethry.png"/>
     <meta charset="UTF-8">
     <title>Order Receipt</title>
     <script src="https://cdn.tailwindcss.com"></script>
